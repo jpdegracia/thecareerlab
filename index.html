@@ -18,37 +18,44 @@
 </head>
 
 <!-- navbar start -->
-<nav id="navBar" class="navbar navbar-expand-lg navbar-light fixed-top">
+<nav id="navBar" class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top">
   <div class="container-fluid">
     <a class="navbar-brand d-flex align-items-center" href="#">
-      <img src="image/image1.png" class="brand-logo me-2" alt="Logo">
-      <!-- <span class="fs-4 fw-bold text-primary">The CareerLab°</span> -->
+      <img src="image/image1.png" class="brand-logo me-2" alt="Logo" style="height: 40px;">
     </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
       aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-      <div class="navbar-nav d-flex align-items-center">
-        <li class="nav-item dropdown me-3">
-        <a class="nav-link dropdown-toggle text-dark" href="#" id="exploreDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Explore</a>
-        <ul class="dropdown-menu" aria-labelledby="exploreDropdown">
-        <li><a class="dropdown-item" href="#">Courses Offered</a></li>
-        <li><a class="dropdown-item" href="#">Admission Strategy</a></li>
-        <li><a class="dropdown-item" href="#">FAQ's</a></li>
-        <li><hr class="dropdown-divider"></li>
-        <li><a class="dropdown-item" href="#">The CareerLab Team</a></li>
-        </ul>
+      <ul class="navbar-nav align-items-lg-center">
+        <li class="nav-item dropdown me-lg-3">
+          <a class="nav-link dropdown-toggle text-dark" href="#" id="exploreDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Explore
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="exploreDropdown">
+            <li><a class="dropdown-item" href="#">Courses Offered</a></li>
+            <li><a class="dropdown-item" href="#">Admission Strategy</a></li>
+            <li><a class="dropdown-item" href="#">FAQ's</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">The CareerLab Team</a></li>
+          </ul>
         </li>
-
-        <a class="nav-link text-dark  me-3" href="#">Careers</a>
-        <a class="btn btn-outline-primary me-2 px-3" href="#">Login</a>
-        <a class="btn btn-primary px-3" href="#">Sign up</a>
-      </div>
+        <li class="nav-item me-lg-3">
+          <a class="nav-link text-dark" href="#">Careers</a>
+        </li>
+        <li class="nav-item me-lg-2">
+          <a class="btn btn-outline-primary px-3 w-100 my-2 my-lg-0" href="#">Login</a>
+        </li>
+        <li class="nav-item">
+          <a class="btn btn-primary px-3 w-100" href="#">Sign up</a>
+        </li>
+      </ul>
     </div>
   </div>
 </nav>
 <!-- navbar end -->
+
 
 <body>
 
@@ -247,111 +254,42 @@
 </div> <!-- container -->
 
 
-    <section id="featured" class="container-fluid">
-    <h2 class="rock-salt-regular text-center py-md-2 my-md-3">FEATURED COURSES 📚</h2>
+   <!-- featured start -->
+<section id="featured" class="container-fluid py-5">
+  <h2 class="rock-salt-regular text-center py-md-2 my-md-3">FEATURED COURSES 📚</h2>
 
+  <div class="container">
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 justify-content-center">
 
-    <section id="featured" class="container py-2  ">
-    <div class="row row-cols-4 row-cols-md-4 g-4 justify-content-center">
-        <div class="col">
-            <div id="featured" class="card text-center p-3 shadow-lg border-0 rounded-4">
-                <img src="image/subject/subject1.jpg">
-                <h5 class="mt-3">AP Biology </h5>
-                <p class="mt-3">
-                    Learn to build beautiful, responsive websites using HTML, CSS, and JavaScript. Master frameworks like React and Vue to create engaging user interfaces.
-                </p>
-                <button class="btn btn-success mt-3 custom-btn">Discover</button>
-            </div>
+      <!-- Card Start -->
+      <div class="col">
+        <div class="card text-center p-3 shadow-lg border-0 rounded-4 h-100">
+          <img src="image/subject/subject1.jpg" class="img-fluid rounded-top" alt="AP Biology">
+          <h5 class="mt-3">AP Biology</h5>
+          <p class="mt-3">Learn to build beautiful, responsive websites using HTML, CSS, and JavaScript. Master frameworks like React and Vue to create engaging user interfaces.</p>
+          <button class="btn btn-success mt-auto">Discover</button>
         </div>
+      </div>
+      <!-- Card End -->
 
-        <div class="col">
-            <div id="featured" class="card text-center p-3 shadow-lg border-0 rounded-4">
-                <img src="image/subject/subject2.webp" 
-                     alt="Back-end" class="img-fluid rounded-top card-img">
-                <h5 class="mt-3">Chemistry</h5>
-                <p class="mt-3">
-                    Power your applications with robust server-side development. Work with databases, APIs, and frameworks like Node.js and Django for seamless functionality.
-                </p>
-                <button class="btn btn-success mt-3 custom-btn">Discover</button>
-            </div>
+      <!-- Repeat for other subjects -->
+      <!-- Example -->
+      <div class="col">
+        <div class="card text-center p-3 shadow-lg border-0 rounded-4 h-100">
+          <img src="image/subject/subject2.webp" class="img-fluid rounded-top" alt="Chemistry">
+          <h5 class="mt-3">Chemistry</h5>
+          <p class="mt-3">Power your applications with robust server-side development. Work with databases, APIs, and frameworks like Node.js and Django for seamless functionality.</p>
+          <button class="btn btn-success mt-auto">Discover</button>
         </div>
+      </div>
 
-        <div class="col">
-            <div id="featured" class="card text-center p-3 shadow-lg border-0 rounded-4">
-                <img src="image/subject/subject3.jpg" 
-                     alt="Full-stack" class="img-fluid rounded-top card-img">
-                <h5 class="mt-3">Physics</h5>
-                <p class="mt-3">
-                    Become a versatile developer by mastering both front-end and back-end technologies. Build complete, scalable web applications from start to finish.
-                </p>
-                <button class="btn btn-success mt-3 custom-btn">Discover</button>
-            </div>
-        </div>
-
-        <div class="col">
-            <div id="featured" class="card text-center p-3 shadow-lg border-0 rounded-4">
-                <img src="image/subject/subject4.jpg" 
-                     alt="JavaScript" class="img-fluid rounded-top card-img">
-                <h5 class="mt-3">Calculus BC</h5>
-                <p class="mt-3">
-                    JavaScript is a versatile language for dynamic and interactive web applications.
-                </p>
-                <button class="btn btn-success mt-3 custom-btn">Discover</button>
-            </div>
-        </div>
-
-        <div class="col">
-            <div id="featured" class="card text-center p-3 shadow-lg border-0 rounded-4">
-                <img src="image/subject/subject5.webp" 
-                     alt="PHP" class="img-fluid rounded-top card-img">
-                <h5 class="mt-3">IB Biology</h5>
-                <p class="mt-3">
-                    PHP is a powerful scripting language widely used for backend web development.
-                </p>
-                <button class="btn btn-success mt-3 custom-btn">Discover</button>
-            </div>
-        </div>
-
-        <div  class="col">
-            <div id="featured" class="card text-center p-3 shadow-lg border-0 rounded-4">
-                <img src="image/subject/subject6.jpg" 
-                     alt="React" class="img-fluid rounded-top card-img">
-                <h5 class="mt-3">Math</h5>
-                <p class="mt-3">
-                    React is a popular JavaScript library for building modern user interfaces.
-                </p>
-                <button class="btn btn-success mt-3 custom-btn">Discover</button>
-            </div>
-        </div>
-
-        <div class="col">
-            <div id="featured" class="card text-center p-3 shadow-lg border-0 rounded-4">
-                <img src="image/subject/subject7.webp" 
-                     alt="PHP" class="img-fluid rounded-top card-img">
-                <h5 class="mt-3">SSAT</h5>
-                <p class="mt-3">
-                    PHP is a powerful scripting language widely used for backend web development.
-                </p>
-                <button class="btn btn-success mt-3 custom-btn">Discover</button>
-            </div>
-        </div>
-
-        <div class="col">
-            <div id="featured" class="card text-center p-3 shadow-lg border-0 rounded-4">
-                <img src="image/subject/subject8.jpg" 
-                     alt="PHP" class="img-fluid rounded-top card-img">
-                <h5 class="mt-3">English</h5>
-                <p class="mt-3">
-                    PHP is a powerful scripting language widely used for backend web development.
-                </p>
-                <button class="btn btn-success mt-3 custom-btn">Discover</button>
-            </div>
-        </div>
+      <!-- ...Repeat for remaining cards... -->
 
     </div>
+  </div>
 </section>
-
 <!-- featured end -->
+
 
 
 

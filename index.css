@@ -27,6 +27,17 @@
 	margin-left: 40px;
 }
 
+@media (max-width: 991.98px) {
+  .navbar-nav .nav-item {
+    margin-bottom: 0.75rem;
+  }
+  .navbar-collapse {
+    background-color: white;
+    padding: 1rem;
+    border-radius: 0 0 10px 10px;
+  }
+}
+
 
 
 /* Style for Login button */

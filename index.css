@@ -1,0 +1,374 @@
+#navBar {
+  font-family: Montserrat;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 30px;
+  text-align: left;
+
+  text-underline-position: none;
+  text-decoration-skip-ink: none;
+
+  /* Updated background to skyblue with 30% opacity */
+  background-color: white;
+
+  /* Optional: Adjust text color for better contrast */
+  color: #000; /* Or choose a darker color for readability */
+}
+
+/*.brand {
+	font-size: 2rem;
+	font-weight: 650;
+}
+*/
+
+.brand-logo {
+	height: 4rem;
+	width: 15rem;
+	margin-left: 40px;
+}
+
+
+
+/* Style for Login button */
+
+
+
+.nav-link.title.login {
+  display: inline-block;
+  padding: 12px 24px;
+  margin: 5px;
+  background-color: white; /* White background for Login */
+  color: #007bff; /* Blue text color for Login */
+  text-align: center;
+  border-radius: 50px; /* Rounded edges */
+  text-decoration: none; /* Remove underline */
+  font-weight: 600; /* Bold text for emphasis */
+  border: 2px solid #007bff; /* Blue border for Login */
+  font-size: 16px; /* Slightly bigger font size */
+  transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s; /* Smooth hover and active effects */
+}
+
+.nav-link.title.login:hover {
+  background-color: #f1f1f1; /* Light grey on hover */
+  transform: scale(1.05); /* Slightly grow the button on hover */
+  box-shadow: 0 4px 8px rgba(0, 123, 255, 0.3); /* Add a soft shadow */
+}
+
+.nav-link.title.login:active {
+  background-color: #e0e0e0; /* Slightly darker grey when clicked */
+  transform: scale(1); /* Button returns to normal size */
+}
+
+
+
+/* Style for Sign up button */
+
+
+.nav-link.title.signup {
+  display: inline-block;
+  padding: 12px 24px;
+  margin: 5px;
+  background-color: #007bff; /* Blue background for Sign up */
+  color: white; /* White text color for Sign up */
+  text-align: center;
+  border-radius: 50px; /* Rounded edges */
+  text-decoration: none;
+  font-weight: 600; /* Bold text */
+  border: 2px solid #007bff; /* Border */
+  font-size: 16px;
+  transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+}
+
+.nav-link.title.signup:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+  transform: scale(1.05); /* Slightly grow the button on hover */
+  box-shadow: 0 4px 8px rgba(0, 123, 255, 0.3); /* Soft shadow effect */
+}
+
+.nav-link.title.signup:active {
+  background-color: #003d7a; /* Even darker blue when clicked */
+  transform: scale(1); /* Button returns to normal size */
+}
+
+
+/* Dropdown Menu Styling */
+.dropdown-menu {
+  background-color: #111; /* dark background */
+  border: 1px solid #2ecc71; /* neon green border */
+  border-radius: 8px;
+  padding: 0.5rem 0;
+  min-width: 180px;
+  box-shadow: 0 4px 8px rgba(0, 255, 0, 0.2);
+}
+
+/* Dropdown Items */
+.dropdown-item {
+  color: #eee;
+  padding: 0.5rem 1rem;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+/* Hover Effect */
+.dropdown-item:hover {
+  background-color: #2ecc71;
+  color: #111;
+}
+
+/* Divider */
+.dropdown-divider {
+  border-top: 1px solid #2ecc71;
+}
+
+/* Toggle Link */
+.nav-link.dropdown-toggle {
+  color: #2ecc71;
+}
+
+.nav-link.dropdown-toggle:hover {
+  color: #0f0;
+}
+
+
+/* Landing Section Styles */
+#hero {
+  position: relative;
+  background: url("image/image3.jpg") no-repeat center center/cover;
+  height: 700px;
+  color: #ffffff;
+  padding: 100px;
+  animation: fadeIn 1.5s ease-in-out;
+  z-index: 1;
+  overflow: hidden;
+}
+
+#hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Adjust the 0.5 for stronger/lighter opacity */
+  z-index: 0;
+}
+
+#hero * {
+  position: relative;
+  z-index: 2;
+}
+
+#hero .row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+#hero .col-md-6 {
+  background-color: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(6px);
+  border-radius: 20px;
+  margin-top: 90px;
+  padding: 60px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: slideUp 1s forwards 0.5s;
+}
+
+#hero .col-md-6:hover {
+  transform: translateY(-5px);
+}
+
+#title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #f0db4f;
+  opacity: 0;
+  animation: fadeIn 1s ease-in-out forwards 1s;
+}
+
+#title2 {
+  font-size: 1.1rem;
+  margin: 20px 0;
+  opacity: 0;
+  animation: fadeIn 1s ease-in-out forwards 1s;
+}
+
+#title2 ul {
+  padding-left: 0;
+}
+
+#title2 li {
+  margin-bottom: 12px;
+  font-size: 1.05rem;
+  line-height: 1.6;
+}
+
+#title2 strong {
+  color: #61dafb;
+}
+
+#base {
+  margin-top: 20px;
+  padding: 12px 24px;
+  background-color: #61dafb;
+  color: #000;
+  font-weight: bold;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  display: inline-block;
+  opacity: 0;
+  animation: fadeIn 1s ease-in-out forwards 1s;
+}
+
+#base:hover {
+  background-color: #4fb4db;
+  color: #fff;
+}
+
+/* Keyframe Animations */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Container Background and Base Text Color */
+/* Dark Background & Base Styling */
+#heading {
+  background-color: #121212; /* deep dark background */
+  color: #e6f1ff; /* light text for contrast */
+  padding: 4rem 1rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Main Title */
+#heading h1 {
+  font-size: 2.8rem;
+  font-weight: 800;
+  color: #58a6ff; /* bright sky blue for accent */
+  margin-bottom: 1rem;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.4);
+}
+
+/* Subheading */
+#heading h3 {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #8ab4f8; /* soft light blue */
+  margin-bottom: 1.2rem;
+}
+
+/* Paragraph */
+#heading p {
+  font-size: 1.1rem;
+  color: #c9d1d9;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+}
+
+/* List Styling */
+#heading ul {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 1rem;
+}
+
+#heading ul li {
+  margin-bottom: 1.1rem;
+  font-size: 1.05rem;
+  color: #d1d5da;
+  line-height: 1.7;
+  position: relative;
+  padding-left: 1.8rem;
+}
+
+/* Check Icon Before Each Item */
+#heading ul li::before {
+  content: "✔️";
+  position: absolute;
+  left: 0;
+  top: 2px;
+  font-size: 1rem;
+  color: #58a6ff;
+}
+
+/* Bold Text in List Items */
+#heading ul li strong {
+  color: #ffffff;
+  font-weight: 700;
+}
+
+
+
+#featured {
+  background-color: #121212;
+  color: #ffffff;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+#featured h2 {
+  font-family: 'Rock Salt', cursive;
+  color: #00ff99; /* neon-green accent */
+  text-shadow: 1px 1px 8px rgba(0, 255, 153, 0.4);
+  font-weight: 800;
+}
+
+#featured .card {
+  background-color: #1e1e1e;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid #2e2e2e;
+  box-shadow: 0 8px 16px rgba(0, 255, 153, 0.1);
+}
+
+#featured .card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 16px 24px rgba(0, 255, 153, 0.2);
+}
+
+#featured .card h5 {
+  color: #00ffcc;
+  font-weight: 600;
+}
+
+#featured .card p {
+  font-size: 0.95rem;
+  color: #d4d4d4;
+}
+
+#featured .card-img {
+  max-height: 200px;
+  object-fit: cover;
+}
+
+#featured .custom-btn {
+  background-color: #007bff;
+  border: none;
+  color: #000;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  font-weight: bold;
+}
+
+#featured .custom-btn:hover {
+  background-color: #00cc7a;
+  color: #fff;
+}
+
